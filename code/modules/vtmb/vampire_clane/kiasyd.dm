@@ -9,6 +9,7 @@
 	)
 	alt_sprite = "kiasyd"
 	no_facial = TRUE
+	violating_appearance = TRUE // you look like a gray alien
 	male_clothes = "/obj/item/clothing/under/vampire/archivist"
 	female_clothes = "/obj/item/clothing/under/vampire/archivist"
 	whitelisted = TRUE
