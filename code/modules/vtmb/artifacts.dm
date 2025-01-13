@@ -101,11 +101,11 @@
 
 /obj/item/vtm_artifact/saulocept/get_powers()
 	..()
-	owner.experience_plus = 10
+	owner.add_experience = 10
 
 /obj/item/vtm_artifact/saulocept/remove_powers()
 	..()
-	owner.experience_plus = 0
+	owner.add_experience = 0
 
 /obj/item/vtm_artifact/galdjum
 	true_name = "Galdjum"
