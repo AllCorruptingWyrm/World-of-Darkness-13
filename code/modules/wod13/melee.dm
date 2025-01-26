@@ -103,6 +103,8 @@
 	if (isliving(target) && proximity)
 		var/mob/living/burnt_mob = target
 		burnt_mob.apply_damage(30, BURN)
+		C.adjust_fire_stacks(5)
+		C.IgniteMob()
 
 /obj/item/melee/vampirearms/katana/blood
 	name = "bloody katana"

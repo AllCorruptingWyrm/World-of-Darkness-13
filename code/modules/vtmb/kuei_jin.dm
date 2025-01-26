@@ -517,7 +517,7 @@
 	var/mob/living/carbon/human/kueijin = usr
 
 	to_chat(usr, "<span class='notify'>You begin to gather <b>Chi</b> from your environment...</span>")
-	if (do_after(kueijin, 15 SECONDS))
+	if (do_after(kueijin, 8 SECONDS))
 		COOLDOWN_START(src, use, cooldown)
 		var/area/draining_area = get_area(kueijin)
 		if(draining_area.yang_chi)
