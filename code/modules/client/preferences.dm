@@ -650,7 +650,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					qdel(discipline)
 
 				var/list/possible_new_disciplines = subtypesof(/datum/discipline) - discipline_types
-				if (possible_new_disciplines.len && (true_experience >= 10))
+				if (possible_new_disciplines.len && (true_experience >= ))
 					dat += "<a href='?_src_=prefs;preference=newghouldiscipline;task=input'>Learn a new Discipline (10)</a><BR>"
 
 			if (pref_species.name == "Kuei-Jin")
@@ -662,9 +662,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 					var/cost
 					if (discipline_level <= 0)
-						cost = 10
+						cost = 5
 					else
-						cost = discipline_level * 6
+						cost = discipline_level * 3
 
 					dat += "<b>[discipline.name]</b> ([discipline.discipline_type]): [discipline_level > 0 ? "•" : "o"][discipline_level > 1 ? "•" : "o"][discipline_level > 2 ? "•" : "o"][discipline_level > 3 ? "•" : "o"][discipline_level > 4 ? "•" : "o"]([discipline_level])"
 					if((true_experience >= cost) && (discipline_level != 5))
