@@ -99,6 +99,8 @@
 	level = 3
 
 	check_flags = DISC_CHECK_CAPABLE
+	violates_masquerade = TRUE
+
 
 	toggled = TRUE
 	duration_length = 2 TURNS
@@ -141,6 +143,7 @@
 	check_flags = DISC_CHECK_CAPABLE
 
 	toggled = TRUE
+	violates_masquerade = TRUE
 	duration_length = 2 TURNS
 
 	var/datum/component/tackler
@@ -181,6 +184,7 @@
 	check_flags = DISC_CHECK_CAPABLE
 
 	toggled = TRUE
+	violates_masquerade = TRUE
 	duration_length = 2 TURNS
 
 	var/datum/component/tackler

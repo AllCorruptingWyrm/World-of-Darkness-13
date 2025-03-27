@@ -125,6 +125,7 @@
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS
 	duration_length = 3 SECONDS
+	violates_masquerade = TRUE
 	range = 7
 
 /datum/discipline_power/dominate/the_forgetful_mind/pre_activation_checks(mob/living/target)
@@ -165,6 +166,7 @@
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS
 	duration_length = 6 SECONDS
+	violates_masquerade = TRUE
 	range = 7
 
 /datum/discipline_power/dominate/conditioning/pre_activation_checks(mob/living/target)
@@ -201,6 +203,7 @@
 
 	check_flags = DISC_CHECK_CAPABLE|DISC_CHECK_SPEAK|DISC_CHECK_SEE
 	target_type = TARGET_HUMAN
+	violates_masquerade = TRUE
 
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS

@@ -26,6 +26,7 @@
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS
 	duration_length = 5 SECONDS
+	violates_masquerade = TRUE
 
 /datum/discipline_power/presence/awe/pre_activation_checks(mob/living/target)
 	var/mypower = owner.get_total_social()
@@ -75,6 +76,8 @@
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS
 	duration_length = 5 SECONDS
+	violates_masquerade = TRUE
+
 
 /datum/discipline_power/presence/dread_gaze/pre_activation_checks(mob/living/target)
 	var/mypower = owner.get_total_social()
@@ -117,6 +120,8 @@
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS
 	duration_length = 5 SECONDS
+	violates_masquerade = TRUE
+
 
 /datum/discipline_power/presence/entrancement/pre_activation_checks(mob/living/target)
 	var/mypower = owner.get_total_social()
@@ -137,8 +142,8 @@
 
 	var/obj/item/I1 = target.get_active_held_item()
 	var/obj/item/I2 = target.get_inactive_held_item()
-	to_chat(target, "<span class='userlove'><b>PLEASE ME</b></span>")
-	owner.say("PLEASE ME!!")
+	to_chat(target, "<span class='userlove'><b>COME TO ME!</b></span>")
+	owner.say("COME TO ME!")
 	target.face_atom(owner)
 	target.do_jitter_animation(3 SECONDS)
 	target.Immobilize(1 SECONDS)
@@ -166,6 +171,8 @@
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS
 	duration_length = 5 SECONDS
+	violates_masquerade = TRUE
+
 
 /datum/discipline_power/presence/summon/pre_activation_checks(mob/living/target)
 	var/mypower = owner.get_total_social()
@@ -216,6 +223,8 @@
 	multi_activate = TRUE
 	cooldown_length = 15 SECONDS
 	duration_length = 5 SECONDS
+	violates_masquerade = TRUE
+
 
 /datum/discipline_power/presence/majesty/pre_activation_checks(mob/living/target)
 	var/mypower = owner.get_total_social()

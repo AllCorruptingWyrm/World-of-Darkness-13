@@ -107,6 +107,8 @@
 	vitae_cost = 0
 
 	toggled = TRUE
+	cooldown_length = 15 SECONDS
+
 
 	grouped_powers = list(
 		/datum/discipline_power/obfuscate/cloak_of_shadows,
@@ -158,6 +160,9 @@
 	check_flags = DISC_CHECK_CAPABLE
 
 	toggled = TRUE
+	cooldown_length = 15 SECONDS
+	duration_length = 2 TURNS
+
 
 	grouped_powers = list(
 		/datum/discipline_power/obfuscate/cloak_of_shadows,
@@ -195,6 +200,8 @@
 	check_flags = DISC_CHECK_CAPABLE
 
 	toggled = TRUE
+	cooldown_length = 15 SECONDS
+	duration_length = 2 TURNS
 
 	grouped_powers = list(
 		/datum/discipline_power/obfuscate/cloak_of_shadows,
