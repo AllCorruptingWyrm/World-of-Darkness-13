@@ -183,6 +183,7 @@
 	weapon_weight = WEAPON_HEAVY // No dual-wielding .50 cals.
 	mag_type = /obj/item/ammo_box/magazine/m50
 	fire_sound_volume = 125 //MY EARS
+// flat out. Do not ever let this return. What were they thinking??
 
 /obj/item/ammo_box/magazine/vamp45acp
 	name = "pistol magazine (.45 ACP)"
